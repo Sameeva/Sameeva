@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FaturaDZ
 
-## Getting Started
+Invoice (facture) and receipt (reçu) maker for Algerian businesses. It prints the legal details (NIF, NIS, RC, Article d'imposition), computes TVA and the droit de timbre, and produces a PDF in the browser.
 
-First, run the development server:
+Everything runs locally in the browser: data is stored in IndexedDB on the user's device, nothing is sent to a server. Users should export a backup regularly (Paramètres → Sauvegarde).
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd faturadz
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Checks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run check      # lint + typecheck + unit/property tests
+npm run build
+npm audit --omit=dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Where things are
 
-## Learn More
+| Path | What |
+| --- | --- |
+| `src/lib/fiscal-config.ts` | **All tax rules** (TVA rates, timbre brackets, ID formats) with their sources. Points marked `TO VERIFY` need an accountant's confirmation. |
+| `src/lib/tax.ts`, `timbre.ts` | Totals in integer centimes, one rounding rule (half up) |
+| `src/lib/amountInWords.ts` | Amount in French words |
+| `src/db/` | Dexie schema, zod validation, numbering/finalization, backup |
+| `src/pdf/` | PDF model (pure, tested) and react-pdf layout |
+| `src/proxy.ts` | Per-request nonce Content-Security-Policy |
 
-To learn more about Next.js, take a look at the following resources:
+## Rules enforced
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Money is integer centimes; TVA is computed per rate on the summed base.
+- Timbre fiscal only for cash payments (art. 100 Code du timbre, LF 2025 brackets).
+- Numbers (`FA-2026-0001`, `RE-2026-0001`) are assigned at finalization, per type and year, in date order.
+- Finalized documents cannot be edited or deleted; duplicate them to correct.
+- Backup imports are validated strictly; logos must be PNG/JPEG and are re-encoded.
