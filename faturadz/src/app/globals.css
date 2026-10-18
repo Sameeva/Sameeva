@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/noto-sans-latin-400-normal.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/noto-sans-latin-700-normal.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #16181d;
+  --surface: #ffffff;
+  --border: #dcdfe5;
+  --muted: #5d6470;
+  --accent: #0f6b4f;
+  --accent-contrast: #ffffff;
+  --warn: #9a5b00;
+  --danger: #b42318;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121418;
+    --foreground: #e8eaee;
+    --surface: #1b1e24;
+    --border: #2f343d;
+    --muted: #9aa1ad;
+    --accent: #3fbf8f;
+    --accent-contrast: #0b1410;
+    --warn: #f0b04a;
+    --danger: #ff7b6e;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --font-sans: "Noto Sans", system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+input,
+select,
+textarea {
+  background: var(--surface);
+  color: var(--foreground);
+}
