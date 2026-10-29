@@ -1,23 +1,31 @@
-Hi, I'm Houssam
+# Hi, I'm Houssam 👋
 
- I fix electronics hardware and software have a background in databases , and like experimenting with AI  to build practical things. 
+I repair electronics at component level, I have a background in databases, and I build practical web tools for Algerian businesses.
 
-TECHNICAL SKILLS :
- Database Management: SQL, Oracle Database, Database Design & Architecture
- Software Development: Delphi (Object Pascal), Python
- Technical Specialties: Desktop / web Application Development, Data Querying & Optimization
- 
-OTHER TECHNICAL SKILLS :
- Micro-Soldering: BGA Reballing, IC Chip Replacement, FPC Connectors, Micro-Jumper Wiring
- Diagnostics & Troubleshooting: Schematic/Boardview Reading, Multimeter Diagnostics, Short-Circuit  Detection
- Hardware Repair: Motherboard Component-Level Repair (Smartphones, Laptops, Consoles), Liquid Damage Restoration and data recovery 
+📍 Algiers, Algeria
 
-What I'm Building (incoming)
+## What I do
 
-  FaturaDZ — A clean invoice and receipt maker built for Algerian businesses. It takes care of legal tax details (NIF, RC, Article d'imposition, and Timbre fiscal) so you can download a proper PDF without wrestling with Excel or Word templates.
-  OrderDZ — A simple order dashboard for Algerian e-commerce and Cash-on-Delivery (COD) sellers. It organizes customer orders across all 69 Wilayas and exports delivery sheets ready for Yalidine and ZR Express.
-  MenuDZ — Contactless QR menus for cafes and restaurants. Customers scan a table code on their phone, and orders go straight to a live screen in the kitchen.
-   I might change the names later ... 
+- **Micro-soldering and board-level repair**: smartphones, laptops and consoles.
+- **Web applications**: small, focused tools built around real local needs.
+- **Databases**: design, SQL querying and optimization.
 
-  Location: Algiers, Algeria
-  Email: djerir.houssam1@gmail.com
+## Projects
+
+| Project | What it does | Status |
+|---|---|---|
+| [**FaturaDZ**](https://github.com/Sameeva/FaturaDZ) | Invoice and receipt maker for Algerian businesses. Handles the legal details (NIF, RC, Article d'imposition, timbre fiscal) and exports a proper PDF. | In development |
+| [**OrderDZ**](https://github.com/Sameeva/OrderDZ) | Order intake and call confirmation for cash-on-delivery sellers. Organizes orders across all 69 wilayas. | In development |
+| **MenuDZ** | Contactless QR menus for cafés and restaurants. Customers scan a table code and orders appear on a live kitchen screen. | Incoming |
+
+## Skills
+
+**Software and data**
+SQL · Oracle Database · Database design · Delphi (Object Pascal) · Python · TypeScript · Next.js · Web and desktop applications
+
+**Hardware**
+BGA reballing · IC replacement · FPC connectors · Micro-jumper wiring · Schematic and boardview reading · Multimeter diagnostics · Short-circuit detection · Liquid damage restoration · Data recovery
+
+## Contact
+
+For repair work or web projects, open an issue or discussion on one of my repositories, or message me through my GitHub profile.
