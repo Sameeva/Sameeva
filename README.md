@@ -24,4 +24,4 @@ Next.js, TypeScript, Prisma, PostgreSQL, Oracle Database, SQL, Python, LLM APIs
 
 ## Contact
 
-Have a project in mind? Message me on [Telegram](https://t.me/houssam3105) or check my [portfolio](https://sameeva.github.io).
+Have a project in mind? Message me on [Telegram](https://t.me/eevva_bot) or check my [portfolio](https://sameeva.github.io).
