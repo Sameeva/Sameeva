@@ -17,6 +17,7 @@ I build web apps and AI solutions for people and businesses, with a background i
 | [**FaturaDZ**](https://github.com/Sameeva/FaturaDZ) | Invoice and receipt maker that fills in the required legal and tax details and exports a PDF. | In development |
 | [**OrderDZ**](https://github.com/Sameeva/OrderDZ) | Order dashboard for cash-on-delivery sellers, with call confirmation and delivery sheet export. | In development |
 | **MenuDZ** | Contactless QR menus for cafés and restaurants. Customers scan a table code and orders appear on a live kitchen screen. | Incoming |
+| [**Contact bot**](https://github.com/Sameeva/contact-bot) | Telegram bot that qualifies visitors with a short guided brief, answers common questions and forwards each lead. | Live |
 
 ## Tools
 
