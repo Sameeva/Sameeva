@@ -1,31 +1,27 @@
 # Hi, I'm Houssam 👋
 
-I repair electronics at component level, I have a background in databases, and I build practical web tools for Algerian businesses.
+I build web apps and AI solutions for people and businesses, with a background in databases.
 
-📍 Algiers, Algeria
+🌐 **Portfolio:** [sameeva.github.io](https://sameeva.github.io)
 
 ## What I do
 
-- **Micro-soldering and board-level repair**: smartphones, laptops and consoles.
-- **Web applications**: small, focused tools built around real local needs.
-- **Databases**: design, SQL querying and optimization.
+- **Web applications**: dashboards, invoicing tools and ordering systems built with Next.js and TypeScript.
+- **AI solutions**: chatbots, assistants and automations built on language models.
+- **Databases**: schema design, SQL queries and performance tuning.
 
 ## Projects
 
 | Project | What it does | Status |
 |---|---|---|
-| [**FaturaDZ**](https://github.com/Sameeva/FaturaDZ) | Invoice and receipt maker for Algerian businesses. Handles the legal details (NIF, RC, Article d'imposition, timbre fiscal) and exports a proper PDF. | In development |
-| [**OrderDZ**](https://github.com/Sameeva/OrderDZ) | Order intake and call confirmation for cash-on-delivery sellers. Organizes orders across all 69 wilayas. | In development |
+| [**FaturaDZ**](https://github.com/Sameeva/FaturaDZ) | Invoice and receipt maker that fills in the required legal and tax details and exports a PDF. | In development |
+| [**OrderDZ**](https://github.com/Sameeva/OrderDZ) | Order dashboard for cash-on-delivery sellers, with call confirmation and delivery sheet export. | In development |
 | **MenuDZ** | Contactless QR menus for cafés and restaurants. Customers scan a table code and orders appear on a live kitchen screen. | Incoming |
 
-## Skills
+## Tools
 
-**Software and data**
-SQL · Oracle Database · Database design · Delphi (Object Pascal) · Python · TypeScript · Next.js · Web and desktop applications
-
-**Hardware**
-BGA reballing · IC replacement · FPC connectors · Micro-jumper wiring · Schematic and boardview reading · Multimeter diagnostics · Short-circuit detection · Liquid damage restoration · Data recovery
+Next.js, TypeScript, Prisma, PostgreSQL, Oracle Database, SQL, Python, LLM APIs
 
 ## Contact
 
-For repair work or web projects, open an issue or discussion on one of my repositories, or message me through my GitHub profile.
+Have a project in mind? Open a discussion or issue on one of my repositories, or check my [portfolio](https://sameeva.github.io).
